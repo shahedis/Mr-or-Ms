@@ -4,6 +4,9 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
 .page-container{
     position: absolute;
@@ -12,8 +15,7 @@ body{
     transform: translate(-50%, -50%);
 }
 .content-box{
-    border: 1px solid black;
-    width: fit-content;
+    width: max-content;
     padding: 40px;
     border-radius: 25px;
     display: flex;
@@ -21,8 +23,9 @@ body{
     background-color: rgb(185 129 51 / 40%);
 }
 .tittle{
-    font-size: 1.8rem;
-    display: block;
+    font-size: 1.4rem;
+    display: #3333;
+    font-weight: bold;
 }
 .user-info{
     gap: 0.7rem;
@@ -46,6 +49,7 @@ body{
     display: none;
     border: 1px dashed;
     padding: 12px;
+    width: max-content;
 }
 .actions{
     display: flex;
@@ -82,7 +86,7 @@ input[type="text"] {
     padding: 24px;
     text-align: center;
     width: fit-content;
-    font-size: 19px;
+    font-size: 17px;
     border-radius: 6px;
     color: wheat;
     opacity: 0;
