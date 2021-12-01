@@ -1,0 +1,52 @@
+body{
+    background: url(images/199-1994682_wallpapers-for-mobile-garden-with-flowers-full-hd.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.page-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-box{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgb(185 129 51 / 40%);
+}
+.tittle{
+    font-size: 2rem;
+    display: block;
+}
+.user-info{
+    gap: 0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+.actions{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    padding: 6px 22px;
+    width: fit-content;
+    /* background: rgb(185 129 51 / 40%); */
+    background: rgba(255, 165, 73, 0.35);
+    font-size: 15px;
+}
+input[type="text"] {
+    background: transparent;
+    border: 1px solid black;
+    padding: 3px;
+    outline: none;
+    margin-left: 4px;
+}
