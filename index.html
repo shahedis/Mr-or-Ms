@@ -4,32 +4,53 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script>
     </head>
-    <shahedis/Mr-or-Ms >
+    <body>
         <div class="page-container">
             <div class="content-box">
-                <span class="tittle">Mr. or Ms.?</span>
-                <div class="user-info">
-                    <div class="name-container">
-                        <label for="name" id="name-label">Name</label>
-                        <input type="text" id="name" name="name" maxlength="255">
+                <div id="details">
+                    <span class="tittle">Mr. or Ms.?</span>
+                    <div class="user-info">
+                        <div class="name-container">
+                            <label for="name" id="name-label">Name</label>
+                            <input type="text" id="name" name="name" maxlength="255" autocomplete="off">
+                        </div>
+                        <div class="gender">
+                            <div class="male-container">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="female-container">
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="gender">
-                        <div class="male-container">
-                            <input type="radio" id="male" name="your-name" value="male">
-                            <label for="male">Male</label>
-                        </div>
-                        <div class="female-container">
-                            <input type="radio" id="female" name="your-name" value="female">
-                            <label for="female">Female</label>
-                        </div>
+                    <div class="actions">
+                        <button class="submit" onclick="submit()">Submit</button>
+                        <button class="save" onclick="save()">Save</button>
                     </div>
                 </div>
-                <div class="actions">
-                    <button class="submit">Submit</button>
-                    <button class="save">Save</button>
+                <div id="prediction-saved">
+                    <div id="prediction">
+                        <span class="tittle">Prediction</span>
+                        <div class="user-info">
+                            <span id="p-gender"></span>
+                            <span id="p-percent">0.22</span>
+                        </div>
+                    </div>
+                    <div id="saved">
+                        <span class="tittle">Saved Answer</span>
+                        <div class="user-info">
+                            <span id="s-gender"></span>
+                            <button class="save">Clear</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
+
     </body>
 </html>

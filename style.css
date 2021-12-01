@@ -13,21 +13,38 @@ body{
 .content-box{
     border: 1px solid black;
     width: fit-content;
-    padding: 30px;
+    padding: 40px;
     border-radius: 25px;
     display: flex;
-    flex-direction: column;
     gap: 1.5rem;
     background-color: rgb(185 129 51 / 40%);
 }
 .tittle{
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: block;
 }
 .user-info{
     gap: 0.7rem;
     display: flex;
     flex-direction: column;
+}
+#prediction-saved{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#details, #prediction, #saved{
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+#prediction{
+    display: none;
+}
+#saved{
+    display: none;
+    border: 1px dashed;
+    padding: 12px;
 }
 .actions{
     display: flex;
@@ -39,9 +56,9 @@ button{
     border: none;
     padding: 6px 22px;
     width: fit-content;
-    /* background: rgb(185 129 51 / 40%); */
     background: rgba(255, 165, 73, 0.35);
     font-size: 15px;
+    cursor: pointer;
 }
 input[type="text"] {
     background: transparent;
@@ -49,4 +66,5 @@ input[type="text"] {
     padding: 3px;
     outline: none;
     margin-left: 4px;
+    width: 50%;
 }
