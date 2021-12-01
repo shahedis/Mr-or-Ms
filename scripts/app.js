@@ -1,5 +1,10 @@
 function submit() {
     var name = document.getElementById('name').value;
+    if(!name){
+        document.getElementById("snackbar").textContent= "Please type your name";
+        showSnackbar();
+        return
+    }
     if(/\d/.test(name)){
         document.getElementById("snackbar").textContent= "Sorry but your name must not contain numbers";
         showSnackbar();
@@ -40,6 +45,11 @@ function searchInLocalStorage(){
 }
 
 function save() {
+    if(!document.querySelector('input[name="gender"]:checked')){
+        document.getElementById("snackbar").textContent= "Please select a gender";
+        showSnackbar();
+        return
+    }
     var name = document.getElementById('name').value;
     var gender = document.querySelector('input[name="gender"]:checked').value;
     if(searchInLocalStorage()){
