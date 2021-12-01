@@ -1,7 +1,6 @@
 function submit() {
     var name = document.getElementById('name').value;
     var gender = document.querySelector('input[name="gender"]:checked').value;
-  
     const url = `https://api.genderize.io/?name=${name}`
     fetch(url)
     .then(response => response.json())
@@ -15,10 +14,8 @@ function submit() {
             document.getElementById("p-percent").textContent= data.probability;
             document.getElementById('prediction').style.display= 'flex' ;
         }
-        
     })
     .catch(console.error);
-    
 }
 function save() {
     var name = document.getElementById('name').value;
