@@ -1,61 +1,64 @@
+/* this is for all of page */
 body{
     background: url(../images/199-1994682_wallpapers-for-mobile-garden-with-flowers-full-hd.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
 }
+/* this is for content container, actually main box */
 .page-container{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-.content-box{
-    width: max-content;
-    padding: 40px;
+    padding: 45px 60px;
     border-radius: 25px;
     display: flex;
-    gap: 1.5rem;
     background: linear-gradient(90deg, rgba(232,98,98,0.6) 0%, rgba(247,207,117,0.6) 100%);
 }
+/* this is for tittles such as prediction and mr or ms and saved answer */
 .tittle{
     font-size: 1.4rem;
     display: #3333;
     font-weight: bold;
 }
+/* this is for each three parts without their tittles */
 .user-info{
     gap: 0.7rem;
     display: flex;
     flex-direction: column;
 }
+/* this if for saved and prediction part */
 #prediction-saved{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+/* this is for three sections that we have such as saved and prediction and user info */
 #details, #prediction, #saved{
     gap: 1.3rem;
     display: flex;
     flex-direction: column;
 }
+/* this is for prediction section*/
 #prediction{
     display: none;
 }
+/* this is for saved section*/
 #saved{
     display: none;
     border: 1px dashed;
     padding: 12px;
     width: max-content;
 }
+/* its for save and submit buttons group */
 .actions{
     display: flex;
     flex-direction: column;
     gap: 7px;
 }
+/* this is for all of the buttons in page */
 button{
     border-radius: 5px;
     border: none;
@@ -65,6 +68,7 @@ button{
     font-size: 15px;
     cursor: pointer;
 }
+/* this is for all of the inputs with text type in page */
 input[type="text"] {
     background: transparent;
     border: 1px solid black;
@@ -73,6 +77,7 @@ input[type="text"] {
     margin-left: 4px;
     width: 60%;
 }
+/* this is for snackbar container to locate in is center */
 .snackbar-container{
     position: absolute;
     width: 100%;
@@ -80,6 +85,7 @@ input[type="text"] {
     justify-content: center;
     bottom: 10px;
 }
+/* this is for snackbar after showing and it`s animation */
 #snackbar {
     visibility: hidden;
     background: tomato;
@@ -92,6 +98,7 @@ input[type="text"] {
     opacity: 0;
     transition: opacity 0.5s linear;
 }  
+/* this is for snackbar before showing */
 #snackbar.show {
     visibility: visible;
     opacity: 1;
