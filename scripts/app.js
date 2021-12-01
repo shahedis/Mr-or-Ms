@@ -52,6 +52,16 @@ function save() {
     }
     var name = document.getElementById('name').value;
     var gender = document.querySelector('input[name="gender"]:checked').value;
+    if(!name){
+        document.getElementById("snackbar").textContent= "Please type your name";
+        showSnackbar();
+        return
+    }
+    if(/\d/.test(name)){
+        document.getElementById("snackbar").textContent= "Sorry but your name must not contain numbers";
+        showSnackbar();
+        return
+    }
     if(searchInLocalStorage()){
         localStorage.removeItem(name);
         localStorage.setItem(name, gender);
@@ -74,5 +84,5 @@ function clean() {
 function showSnackbar() {
     var snkbr = document.getElementById("snackbar");
     snkbr.className = "show";
-    setTimeout(function(){ snkbr.className = snkbr.className.replace("show", ""); }, 8000);
+    setTimeout(function(){ snkbr.className = snkbr.className.replace("show", ""); }, 5000);
 }
