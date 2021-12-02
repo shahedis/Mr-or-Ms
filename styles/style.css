@@ -1,10 +1,13 @@
+*{
+    margin: 0;
+}
 /* this is for all of page */
 body{
     background: url(../images/199-1994682_wallpapers-for-mobile-garden-with-flowers-full-hd.jpg) no-repeat center center fixed; 
     background-size: cover;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 0.8rem;
 }
 /* this is for content container, actually main box */
 .page-container{
@@ -12,9 +15,10 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 45px 60px;
+    padding: 5% 3%;
     border-radius: 25px;
     display: flex;
+    gap: 2rem;
     background: linear-gradient(90deg, rgba(232,98,98,0.6) 0%, rgba(247,207,117,0.6) 100%);
 }
 /* this is for tittles such as prediction and mr or ms and saved answer */
@@ -40,6 +44,7 @@ body{
     gap: 1.3rem;
     display: flex;
     flex-direction: column;
+    width: max-content;
 }
 /* this is for prediction section*/
 #prediction{
@@ -52,30 +57,35 @@ body{
     padding: 12px;
     width: max-content;
 }
-/* its for save and submit buttons group */
+/* this is for save and submit buttons group */
 .actions{
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 0.4rem;
+}
+/* this is  for name and label*/
+.name-container {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
 }
 /* this is for all of the buttons in page */
 button{
     border-radius: 5px;
     border: none;
-    padding: 6px 22px;
+    padding: 0.3rem 0.7rem;
     width: fit-content;
     background: rgba(255, 165, 73, 0.35);
-    font-size: 15px;
+    font-size: 0.84rem;
     cursor: pointer;
 }
 /* this is for all of the inputs with text type in page */
 input[type="text"] {
     background: transparent;
     border: 1px solid black;
-    padding: 4px;
+    padding: 0.3rem;
     outline: none;
-    margin-left: 4px;
-    width: 60%;
+    width: 4rem;
 }
 /* this is for snackbar container to locate in is center */
 .snackbar-container{
